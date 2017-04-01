@@ -1,0 +1,203 @@
+#Comment starts with a "#" in the first column.
+#Each line cannot be longer than 1024 characters.
+
+
+#=== VERTICES ===
+
+#Number of vertices.
+52
+
+#Each line must provide the x, y, z coordinates of a vertex.
+#The first vertex has index 0.
+
+#floor (0-3)
+600 0.0 0.0
+0.0 0.0 0.0
+0.0 0.0 600
+600 0.0 600
+
+#ceiling (4-7)
+600 600 0.0
+0.0 600  0.0
+0.0 600 600
+600 600 600
+
+#light (8-11)
+343.0 600 227.0
+213.0 600 227.0
+213.0 600 332.0
+343.0 600 332.0
+
+#tall_box_bottom (12-15)
+130.0 0.0  65.0
+82.0 0.0 225.0
+240.0 0.0 272.0
+290.0 0.0 114.0
+
+#short_box_bottom (16-19)
+423.0 0.0 247.0
+265.0 0.0 296.0
+314.0 0.0 456.0
+472.0 0.0 406.0
+
+#tall_box_top (20-23)
+130.0 330.0  65.0
+82.0 330.0 225.0
+240.0 330.0 272.0
+290.0 330.0 114.0
+
+#short_box_top (24-27)
+423.0 165.0 247.0
+265.0 165.0 296.0
+314.0 165.0 456.0
+472.0 165.0 406.0
+
+# long box btm (28 - 31)
+0.0 0.0 0.0
+0.0 0.0 150.0
+600.0 0.0 150.0
+600.0 0.0 0.0
+
+# long box top (32 - 35)
+0.0 300.0 0.0
+0.0 300.0 150.0
+600.0 300.0 150.0
+600.0 300.0 0.0
+
+# long box btm (36 - 39)
+0.0 0.0 170.0
+0.0 0.0 320.0
+600.0 0.0 320.0
+600.0 0.0 170.0
+
+# long box top (40 - 43)
+0.0 180.0 170.0
+0.0 180.0 320.0
+600.0 180.0 320.0
+600.0 180.0 170.0
+
+# long box btm (44 - 47)
+0.0 0.0 330.0
+0.0 0.0 480.0
+600.0 0.0 480.0
+600.0 0.0 330.0
+
+# long box top (48 - 51)
+0.0 90.0 330.0
+0.0 90.0 480.0
+600.0 90.0 480.0
+600.0 90.0 330.0
+
+#=== MATERIALS ===
+
+#Number of materials.
+6
+
+#Each material is specified by two lines.
+#First line is the RGB reflectivity.
+#Second line is the RGB emission.
+#The first material has index 0.
+
+
+#light - 0
+0.78 0.78 0.78
+60.0 60.0 60.0
+
+#white - 1
+0.75 0.75 0.75
+0.0 0.0 0.0
+
+#red - 2
+0.7 0.0 0.0
+0.0 0.0 0.0
+
+#green - 3
+0.0 0.7 0.0
+0.0 0.0 0.0
+
+#orange - 4
+1.0 0.5 0.0
+0.0 0.0 0.0
+
+#yellow - 5
+1.0 0.84 0.0
+0.0 0.0 0.0
+
+#=== SURFACES ===
+
+#Number of surfaces.
+10
+
+#Each surface is made of one or more quadrilateral patches.
+#For each surface, the first integer is the material index,
+#the second integer is the number of quadrilateral patches,
+#then followed by lines where each corresponds to a 
+#quadrilateral patch. Each line has 4 integers, which are
+#indices to the above vertices. The vertices must be listed
+#in counter-clockwise direction when viewed from its frontside.
+
+
+#floor (white)
+1
+1
+0 1 2 3
+
+#ceiling (white)
+1
+4
+4 8 9 5
+5 9 10 6
+6 10 11 7
+7 11 8 4
+
+#light (light)
+0
+1
+8 11 10 9
+
+#back_wall (white)
+1
+1
+0 4 5 1
+
+#left_wall (red)
+2
+1
+1 5 6 2
+
+#right_wall (green)
+4
+1
+3 7 4 0
+
+#long block _top 1
+5
+1
+32 33 34 35
+
+#long block _front 1
+5
+1
+33 40 43 34
+
+#long block _top 2
+5
+1
+40 41 42 43
+
+#long block _front 2
+5
+1
+41 48 51 42
+
+#long block _top 3
+5
+1
+48 49 50 51
+
+#long block _front 3
+5
+1
+49 45 46 50
+
+#End of file.

@@ -1,0 +1,8 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (RadiosityViewer.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  radiositysolver.cpp
+d:\program files (x86)\dropbox\modules\cs4247 graphics rendering techniques\assignment\3\cs4247_assign3_2016_todo\radiositysolver.cpp(318): warning C4101: 'sideVecN': unreferenced local variable
+d:\program files (x86)\dropbox\modules\cs4247 graphics rendering techniques\assignment\3\cs4247_assign3_2016_todo\radiositysolver.cpp(482): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+d:\program files (x86)\dropbox\modules\cs4247 graphics rendering techniques\assignment\3\cs4247_assign3_2016_todo\radiositysolver.cpp(585): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+  RadiositySolver.vcxproj -> D:\Program Files (x86)\Dropbox\Modules\CS4247 Graphics Rendering Techniques\Assignment\3\cs4247_assign3_2016_todo\Debug\RadiositySolver.exe
